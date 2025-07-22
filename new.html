@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+</head>
+<body>
+
+  <h2>Form</h2>
+
+  <form action="#" >
+
+    <label >Name (Only letters, min 3):</label><br>
+    <input type="text" id="name" placeholder="Enter your name"  pattern="[A-Za-z]{3,}" title="Only letters, minimum 3 characters" required><br><br>
+
+    <label for="email">Email (required):</label><br>
+    <input type="email" id="email"  required><br><br>
+
+    <label for="age">Age (18-80):</label><br>
+    <input type="number" id="age" min="18" max="80" required><br><br>
+
+    <label for="phone">Phone (10 digits):</label><br>
+    <input type="text" id="phone" pattern="[1-9]{5}-[1-9]{5}" placeholder="01234-56789" title="Exactly 10 digits" required><br><br>
+
+    <label for="password">Password (6-12 characters):</label><br>
+    <input type="password" id="password" minlength="6" maxlength="12" required><br><br>
+
+    <label for="confirm_password">Confirm Password</label><br>
+    <input type="password" id="confirm_password" minlength="6" maxlength="12" required><br><br>
+
+    <label>Gender:</label><br>
+
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+
+
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
