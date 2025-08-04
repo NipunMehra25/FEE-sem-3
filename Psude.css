@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+
+    a:link {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      color: darkorange;
+      text-decoration: underline;
+    }
+
+
+
+    form {
+      margin-top: 30px;
+    }
+
+    input[type="email"]:invalid {
+      border: 2px solid red;
+    }
+
+    input[type="email"]:focus {
+      background-color: #ffffff;
+    }
+
+    input[type="submit"] {
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    h1::before {
+      content: "★ ";
+      color: gold;
+    }
+
+    h1::after {
+      content: " ★";
+      color: gold;
+    }
+
+    .hover-box {
+      display: inline-block;
+      padding: 10px;
+      background-color: #ddd;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .hover-box:hover::after {
+      content: " (hovered!)";
+      color: green;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to the Demo Page</h1>
+
+  <p>
+    <a href="https://example.com" target="_blank">Visit Example</a>
+  </p>
+
+  <div class="hover-box">
+    Hover over me
+  </div>
+
+  <form>
+    <label for="email">Email (required):</label><br>
+    <input type="email" id="email" name="email" required placeholder="Enter your email"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
